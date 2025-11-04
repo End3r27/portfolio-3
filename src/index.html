@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rylee - Full Stack Developer specializing in modern web applications, responsive design, and scalable solutions. Explore my portfolio of fitness and e-commerce projects.">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, JavaScript, React, Node.js, Portfolio, Rylee">
+    <meta name="author" content="Rylee">
+    <meta property="og:title" content="Rylee - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer crafting modern web experiences with React, Node.js, and responsive design.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rylee - Full Stack Developer">
+    <meta name="twitter:description" content="Full Stack Developer specializing in modern web applications and user-centric design.">
+    <title>Rylee - Full Stack Developer Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="Home">
+                <img src="favicon.svg" alt="Rylee logo" class="logo-icon" />
+                <span class="logo-text sr-only">Rylee</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting fade-in">Hello, I'm</p>
+                    <h1 class="hero-title fade-in-up">Rylee</h1>
+                    <p class="hero-subtitle fade-in-up delay-1">Full Stack Developer & Digital Craftsman</p>
+                    <p class="hero-description fade-in-up delay-2">
+                        I build modern, scalable web applications that deliver exceptional
+                        user experiences with clean code and thoughtful design.
+                    </p>
+
+                    <div class="hero-cta fade-in-up delay-3">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="scroll-indicator">
+                        <div class="scroll-mouse">
+                            <div class="scroll-wheel"></div>
+                        </div>
+                        <p class="scroll-text">Scroll Down</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-heading">Crafting Digital Solutions</h3>
+                    <p class="about-paragraph">
+                        I'm a dedicated full stack developer passionate about transforming ideas into
+                        powerful web applications. My expertise spans the entire development lifecycle,
+                        from conceptualizing user interfaces to architecting robust backend systems.
+                        I thrive on solving complex problems with elegant, maintainable code.
+                    </p>
+                    <p class="about-paragraph">
+                        Specializing in modern JavaScript ecosystems, I build responsive, performant
+                        applications using React, Node.js, and cutting-edge web technologies. Whether
+                        it's crafting pixel-perfect frontends or designing scalable APIs, I approach
+                        every project with attention to detail and a commitment to best practices.
+                        I believe great software combines technical excellence with intuitive user experiences.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-container">
+                    <h3 class="skills-heading">Technical Skills</h3>
+
+                    <div class="skill-category">
+                        <h4 class="category-title">Frontend Development</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">⚛️</div>
+                                <span class="skill-name">React</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🎨</div>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">💻</div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">📱</div>
+                                <span class="skill-name">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4 class="category-title">Backend Development</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">🟢</div>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🗄️</div>
+                                <span class="skill-name">PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔥</div>
+                                <span class="skill-name">Express</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔐</div>
+                                <span class="skill-name">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4 class="category-title">Tools & Workflow</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">📦</div>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🐳</div>
+                                <span class="skill-name">Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⚙️</div>
+                                <span class="skill-name">CI/CD</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">☁️</div>
+                                <span class="skill-name">Cloud Deploy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Recent Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://end3r27.github.io/portfolio-1/" class="project-link" aria-label="View Fitness Coach Landing Page" target="_blank" rel="noopener">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-thumbnail project-thumbnail-1"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+
+                        <h3 class="project-title">Fitness Coach Landing Page</h3>
+                        <p class="project-description">
+                            A dynamic, conversion-focused landing page for fitness coaching services.
+                            Features responsive design, smooth animations, compelling CTAs, and
+                            optimized user journey to maximize engagement and client acquisition.
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://end3r27.github.io/portfolio-1/" class="project-btn" target="_blank" rel="noopener">Live Demo</a>
+                            <a href="https://github.com/End3r27/portfolio-1" class="project-btn project-btn-secondary" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://end3r27.github.io/portfolio-2/" class="project-link" aria-label="View Coffee Shop Landing Page" target="_blank" rel="noopener">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-thumbnail project-thumbnail-2"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+
+                        <h3 class="project-title">Coffee Shop Landing Page</h3>
+                        <p class="project-description">
+                            An elegant, modern landing page for a coffee shop business. Showcases
+                            products and ambiance with beautiful imagery, mobile-first responsive
+                            design, and intuitive navigation that reflects the brand's personality.
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://end3r27.github.io/portfolio-2/" class="project-btn" target="_blank" rel="noopener">Live Demo</a>
+                            <a href="https://github.com/End3r27/portfolio-2" class="project-btn project-btn-secondary" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Work Together</h3>
+                    <p class="contact-text">
+                        I'm always open to discussing new projects, creative ideas,
+                        or opportunities to be part of your vision. Feel free to reach
+                        out through any of the channels below.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h4 class="method-title">Email</h4>
+                                <a href="mailto:valerio.virzi1@gmail.com" class="method-link">
+                                    valerio.virzi1@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="32" height="32" role="img">
+                                    <circle cx="12" cy="12" r="10" fill="#1DBF73" />
+                                    <text x="12" y="16" text-anchor="middle" font-size="12" font-family="Poppins, Inter, Arial, sans-serif" fill="#ffffff" font-weight="700">f</text>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <h4 class="method-title">Fiverr</h4>
+                                <a href="https://www.fiverr.com/end3r_27" class="method-link" target="_blank" rel="noopener">
+                                    fiverr.com/end3r_27
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h4 class="method-title">Location</h4>
+                                <p class="method-text">Rome, Italy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.fiverr.com/end3r_27" class="social-link" aria-label="Fiverr" target="_blank" rel="noopener">
+                            <svg class="social-icon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#1DBF73" />
+                                <text x="12" y="16" text-anchor="middle" font-size="12" font-family="Poppins, Inter, Arial, sans-serif" fill="#ffffff" font-weight="700">f</text>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-input"
+                            placeholder="John Doe"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="john@example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            class="form-input"
+                            placeholder="Project Inquiry"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form-input form-textarea"
+                            rows="5"
+                            placeholder="Tell me about your project..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Send Message
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2025 Rylee. Crafted with passion and code.
+                </p>
+                <p class="footer-text footer-secondary">
+                    Built with HTML, CSS, and vanilla JavaScript
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.halo.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.VANTA && document.querySelector('.hero-background')) {
+                if (window.vantaEffect && typeof window.vantaEffect.destroy === 'function') {
+                    window.vantaEffect.destroy();
+                }
+                window.vantaEffect = VANTA.HALO({
+                    el: ".hero-background",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    baseColor: 0x921eff,
+                    // Make canvas transparent so the hero gradient shows through
+                    backgroundColor: 0x000000,
+                    backgroundAlpha: 0.0,
+                    size: 1.50
+                });
+            }
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
